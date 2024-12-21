@@ -10,3 +10,6 @@ The zoom-in and zoom-out features don't work yet. Press the purple U to update y
 
 # Progress
 Currently, I only have Wilds End mostly mapped.
+
+# Disclaimer
+I don't warranty or guarantee anything. It is your responsibility to ensure this code won't harm your system or gameplay. Use at your own risk.
