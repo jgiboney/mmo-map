@@ -65,34 +65,34 @@ $Window.FindName("CloseButton").Add_Click({
 
 # Zoom In Functionality
 $Window.FindName("ZoomInButton").Add_Click({
-    if ($Window.Height+20 -lt [System.Windows.SystemParameters]::PrimaryScreenHeight) { # Check if the window height is less than the screen height
-        $Window.Height = $Window.Height + 100                # Increase the window height (from the bottom left corner)
-        $Window.Width = $Window.Width + 100                  # Increase the window width (from the bottom left corner)
-        $Window.Left = $Window.Left - 50.05                 # Move the window to the right
-        $MyImage = $Window.FindName("MyImage")              # Get the Image control
-        $MyImage.Width += 100                                # Increase the image width
-        $MyImage.Height += 100                               # Increase the image height
-        #$MapClip = $Window.FindName("MapClip")              # Get the clipping geometry
-        #$HalfWidth = ($MyImage.Width)/2                     # Calculate the half width of the image
-        #$MapClip.Center = $HalfWidth.ToString()+",125"     # Update the center of the clipping geometry
-        UpdateMap
-    }
+    # if ($Window.Height+20 -lt [System.Windows.SystemParameters]::PrimaryScreenHeight) { # Check if the window height is less than the screen height
+    #     $Window.Height = $Window.Height + 100                # Increase the window height (from the bottom left corner)
+    #     $Window.Width = $Window.Width + 100                  # Increase the window width (from the bottom left corner)
+    #     $Window.Left = $Window.Left - 50.05                 # Move the window to the right
+    #     $MyImage = $Window.FindName("MyImage")              # Get the Image control
+    #     $MyImage.Width += 100                                # Increase the image width
+    #     $MyImage.Height += 100                               # Increase the image height
+    #     #$MapClip = $Window.FindName("MapClip")              # Get the clipping geometry
+    #     #$HalfWidth = ($MyImage.Width)/2                     # Calculate the half width of the image
+    #     #$MapClip.Center = $HalfWidth.ToString()+",125"     # Update the center of the clipping geometry
+    #     UpdateMap
+    # }
 })
 
 # Zoom Out Functionality
 $Window.FindName("ZoomOutButton").Add_Click({
-    if ($Window.Height -gt 280) {                           # Check if the window height is greater than 280
-        $Window.Height = $Window.Height - 100                # Decrease the window height (from the bottom left corner)
-        $Window.Width = $Window.Width - 100                  # Decrease the window width (from the bottom left corner)
-        $Window.Left = $Window.Left + 50.05                 # Move the window to the left
-        $MyImage = $Window.FindName("MyImage")              # Get the Image control
-        $MyImage.Width -= 100                                # Decrease the image width
-        $MyImage.Height -= 100                               # Decrease the image height
-        #$MapClip = $Window.FindName("MapClip")              # Get the clipping geometry
-        #$HalfWidth = ($MyImage.Width)/2                     # Calculate the half width of the image
-        #$MapClip.Center = $HalfWidth.ToString()+",125"      # Update the center of the clipping geometry
-        UpdateMap
-    }
+    # if ($Window.Height -gt 280) {                           # Check if the window height is greater than 280
+    #     $Window.Height = $Window.Height - 100                # Decrease the window height (from the bottom left corner)
+    #     $Window.Width = $Window.Width - 100                  # Decrease the window width (from the bottom left corner)
+    #     $Window.Left = $Window.Left + 50.05                 # Move the window to the left
+    #     $MyImage = $Window.FindName("MyImage")              # Get the Image control
+    #     $MyImage.Width -= 100                                # Decrease the image width
+    #     $MyImage.Height -= 100                               # Decrease the image height
+    #     #$MapClip = $Window.FindName("MapClip")              # Get the clipping geometry
+    #     #$HalfWidth = ($MyImage.Width)/2                     # Calculate the half width of the image
+    #     #$MapClip.Center = $HalfWidth.ToString()+",125"      # Update the center of the clipping geometry
+    #     UpdateMap
+    # }
 })
 
 
